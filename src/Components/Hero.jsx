@@ -115,7 +115,7 @@ function Hero() {
             <directionalLight position={[3, 2, 1]} />
             <Icosahedron args={[1, 100, 200]} scale={2.2} >
             <MeshDistortMaterial
-                color="#200444"
+                color="#85737e"
                 attach="material"
                 distort={0.6}
                 speed={1.5}

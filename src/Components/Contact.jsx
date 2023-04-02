@@ -60,7 +60,7 @@ function Contact() {
   };
 
   return (
-    <>
+    <div id="contact">
       <Sections>
         <div className="chead">
           <h3> contact with us</h3>
@@ -114,7 +114,7 @@ function Contact() {
           <div className="cpolicy">
             <h1>By clicking the button you agree our terms &amp; conditions</h1>
             <div className="cpolicylink">
-              <a href="#">Treams and conditions</a>
+              <a href="/treams">Treams and conditions</a>
             </div>
           </div>
 
@@ -125,7 +125,7 @@ function Contact() {
           </div>
         </form>
       </Sections>
-    </>
+    </div>
   );
 }
 

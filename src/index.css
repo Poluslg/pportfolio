@@ -99,3 +99,15 @@ body {
 
   }
 }
+
+.listitems a{
+ color: white;
+ cursor: pointer;
+ padding: 5px;
+ gap: 20px;
+ text-decoration: none;
+ list-style: none;
+ @media only screen and (max-width: 768px) {
+
+ }
+}

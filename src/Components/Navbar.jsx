@@ -15,11 +15,10 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 10px 0px;
-  
+
   @media only screen and (max-width: 768px) {
     width: 100%;
     padding: 10px;
-  
   }
 `;
 
@@ -42,9 +41,7 @@ const List = styled.ul`
   }
 `;
 
-const ListItem = styled.li`
-  cursor: pointer;
-`;
+
 
 const Icons = styled.div`
   display: flex;
@@ -68,26 +65,28 @@ const Button = styled.button`
 `;
 const Navbar = () => {
   const hireNow = () => {
-    window.location.href = 'https://www.google.com';
-  }
-    return (
-        <Section>
-            <Container>
-                <Links>
-                    <Logo src="./imgs/favicon.png" />
-                    <List>
-                        <ListItem herf="./hero">Home</ListItem>
-                        <ListItem herf="./About">About</ListItem>
-                        <ListItem herf="./Contact">Contact</ListItem>
-                    </List>
-                </Links>
-                <Icons>
-                    <Icon src="./imgs/search.png" />
-                    <Button onClick={hireNow}>Hire Now</Button>
-                </Icons>
-            </Container>
-        </Section>
-    )
-}
+    window.location.href = "https://www.google.com";
+  };
+  return (
+    <Section>
+      <Container>
+        <Links>
+          <Logo src="./imgs/favicon.png" />
+          <List>
+            <div className="listitems">
+              <a href="/">Home</a>
+              <a href="#about">About</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </List>
+        </Links>
+        <Icons>
+          <Icon src="./imgs/search.png" />
+          <Button onClick={hireNow}>Hire Now</Button>
+        </Icons>
+      </Container>
+    </Section>
+  );
+};
 
-export default Navbar
+export default Navbar;
