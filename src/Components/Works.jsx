@@ -59,7 +59,7 @@ color: transparent;
 position: relative;
 @media only screen and (max-width: 768px) {
    font-size: 55px;
-   color: white;
+   color: #000000;
    -webkit-text-stroke:0px ;
   }
 
@@ -68,7 +68,7 @@ position: relative;
   position: absolute;
   top: 0;
   left: 0;
-  color: rebeccapurple;
+  color: #ffffff;
   width: 0px;
   overflow: hidden;
   white-space: nowrap;

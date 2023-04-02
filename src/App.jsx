@@ -13,8 +13,10 @@ scroll-snap-type: y mandatory;
 scroll-behavior: smooth;
 overflow-y: auto;
 scrollbar-width: none;
-color: white;
-background: url("./imgs/bg.jpeg");
+color: #ffffff;
+/* background: url("./imgs/bg.jpeg"); */
+/* background-color:#5317dd; */
+background: -webkit-linear-gradient(left, #7412f5,  #7a1ef3 30%, #4a2f5a);
 
 &::-webkit-scrollbar {
   display: none;

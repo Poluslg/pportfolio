@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import Navbar from './Navbar';
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
+import { OrbitControls, Sphere, MeshDistortMaterial, Icosahedron } from "@react-three/drei";
 
 const Sections = styled.div`
  height: 100vh;
@@ -91,28 +91,7 @@ position: relative;
   }
 
 `;
-const Img = styled.img`
-width: 800px;
-height: 600px;
-object-fit: contain;
-position: absolute;
-top: 0;
-bottom:0;
-left: 0;
-right: 0;
-margin: auto;
-animation: animate 2s infinite ease alternate;
-@media only screen and (max-width: 768px) {
-   width: 300px;
-   height: 300px;
-  }
 
- @keyframes animate {
-  to{
-    transform: translateY(20px);
-  }
- }
-`;
 
 function Hero() {
   return (
@@ -129,22 +108,22 @@ function Hero() {
           <Button>Learn more</Button>
         </Left>
         <Right>
-        
+
           <Canvas>
-              <OrbitControls enableZoom={false} />
-              <ambientLight intensity={1} />
-              <directionalLight position={[3, 2, 1]} />
-              <Sphere args={[1, 100, 200]} scale={2.4}>
-                <MeshDistortMaterial
-                  color="#3d1c56"
-                  attach="material"
-                  distort={0.5}
-                  speed={2}
-                />
-              </Sphere>
-           
+            <OrbitControls enableZoom={false} />
+            <ambientLight intensity={2} />
+            <directionalLight position={[3, 2, 1]} />
+            <Icosahedron args={[1, 100, 200]} scale={2.2} >
+            <MeshDistortMaterial
+                color="#200444"
+                attach="material"
+                distort={0.6}
+                speed={1.5}
+              />
+            </Icosahedron>
+
           </Canvas>
-          <Img src="./imgs/moon.png" />
+          {/* <Img src="./imgs/moon.png" /> */}
         </Right>
       </Container>
     </Sections>

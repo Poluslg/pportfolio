@@ -114,7 +114,7 @@ function Contact() {
           <div className="cpolicy">
             <h1>By clicking the button you agree our terms &amp; conditions</h1>
             <div className="cpolicylink">
-              <a href="#  ">Treams and conditions</a>
+              <a href="#">Treams and conditions</a>
             </div>
           </div>
 
